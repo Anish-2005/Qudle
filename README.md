@@ -1,213 +1,81 @@
-# 🏆 QUDLE - The Ultimate Gamified Learning Platform
+# Qudle: A Modern Web Application
+![thumbnail](./public/assets/landingPage-f99acd5d-7546-4dfa-989d-ee13e9063ac0)
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-Work%20In%20Progress-yellow" alt="Status">
-  <img src="https://img.shields.io/badge/Frontend-Complete-green" alt="Frontend">
-  <img src="https://img.shields.io/badge/Backend-Pending-red" alt="Backend">
-  <img src="https://img.shields.io/badge/Next.js-15.3.0-black" alt="Next.js">
-  <img src="https://img.shields.io/badge/React-19.0.0-blue" alt="React">
-</div>
+## 🗂️ Description
 
-## 🚧 Current Status: UI Development Complete
+Qudle is a cutting-edge web application built with Next.js, TypeScript, and Tailwind CSS. It's designed to provide a seamless user experience, featuring a responsive layout, interactive components, and a robust tech stack. This project is perfect for developers looking for a solid foundation to build upon.
 
-**QUDLE** is an innovative educational platform that transforms traditional learning into an engaging, competitive experience. Currently, the complete user interface has been developed and is ready for backend integration.
+Qudle's primary goal is to showcase a well-structured and maintainable codebase, making it an excellent resource for learning and inspiration. With its modular architecture and clear documentation, Qudle is an ideal starting point for your next web development project.
 
-### ⚠️ Work in Progress Notice
-This project is currently in **active development**. The frontend UI is complete and functional, but backend services, database integration, and core functionality are still being developed.
+## ✨ Key Features
 
----
+### **Core Features**
 
-## 🎮 What is QUDLE?
+* **Responsive Layout**: A fully responsive design that adapts to various screen sizes and devices.
+* **Interactive Components**: Engaging and interactive components, such as hero sections, feature grids, and leaderboards.
+* **Client-Side Rendering**: Fast and efficient client-side rendering for a seamless user experience.
 
-QUDLE revolutionizes education by combining competitive gaming elements with learning. Students engage in quiz battles, unlock achievements, track progress, and compete with classmates in real-time challenges.
+### **Tech Stack**
 
-### 🌟 Key Features (UI Complete)
-- **🎯 Battle Royale Mode**: Real-time quiz competitions
-- **🏆 Achievement System**: Comprehensive trophy and badge collection
-- **📊 Progress Analytics**: Detailed performance tracking
-- **🔥 Streak System**: Daily login rewards and challenges
-- **👥 Classroom Wars**: Team-based learning competitions
-- **🧩 Skill Recovery Games**: Interactive mistake correction
-- **⚡ Power-ups**: Special abilities for quiz battles
-- **🎨 Modern UI**: Beautiful, responsive design with animations
+* **Next.js**: A popular React-based framework for building server-rendered and statically generated websites and applications.
+* **TypeScript**: A statically typed language for building scalable and maintainable applications.
+* **Tailwind CSS**: A utility-first CSS framework for rapid styling and layout.
 
----
+## 🗂️ Folder Structure
 
-## 🛠️ Technology Stack
-
-### Frontend (✅ Complete)
-- **Framework**: Next.js 15.3.0 with App Router
-- **UI Library**: React 19.0.0
-- **Styling**: Tailwind CSS 4.0
-- **Animations**: Framer Motion 12.7.2
-- **Icons**: Lucide React & Heroicons
-- **Audio**: Howler.js for sound effects
-
-### Backend (🔄 Planned)
-- **Runtime**: Node.js
-- **Database**: MongoDB/PostgreSQL
-- **Authentication**: NextAuth.js
-- **Real-time**: Socket.io
-- **AI Integration**: OpenAI/Gemini API
-
----
-
-## 📁 Project Structure
-
-```
-SBH-Qudle/
-├── qudle/
-│   ├── app/
-│   │   ├── page.js          # Main landing page
-│   │   ├── trophy/
-│   │   │   └── page.jsx     # Achievement system
-│   │   ├── layout.js        # Root layout
-│   │   └── globals.css      # Global styles
-│   ├── public/              # Static assets
-│   ├── package.json         # Dependencies
-│   └── next.config.mjs      # Next.js configuration
-└── README.md
+```mermaid
+graph TD;
+  src-->app;
+  app-->layout.js;
+  app-->page.js;
+  app-->trophy;
+  trophy-->page.jsx;
+  src-->jsconfig.json;
+  src-->postcss.config.mjs;
+  src-->next.config.mjs;
+  src-->eslint.config.mjs;
 ```
 
----
+## 🛠️ Tech Stack
 
-## 🚀 Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?logo=typescript&logoColor=white&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232a?logo=react&logoColor=white&style=for-the-badge)
+![ESLint](https://img.shields.io/badge/ESLint-4B4B4B?logo=eslint&logoColor=white&style=for-the-badge)
+![PostCSS](https://img.shields.io/badge/PostCSS-DD6777?logo=postcss&logoColor=white&style=for-the-badge)
 
-### Prerequisites
-- Node.js 18+ installed
-- npm or yarn package manager
+## ⚙️ Setup Instructions
 
-### Installation
+To run Qudle locally, follow these steps:
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/SBH-Qudle.git
-   cd SBH-Qudle/qudle
-   ```
+* Git clone the repository: `git clone https://github.com/Anish-2005/Qudle.git`
+* Navigate to the project directory: `cd Qudle`
+* Install dependencies: `npm install` or `yarn install`
+* Start the development server: `npm run dev` or `yarn dev`
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+Open your browser and navigate to `http://localhost:3000` to see Qudle in action.
 
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
+## 📁 Configuration Files
 
-4. **Open your browser**
-   ```
-   http://localhost:3000
-   ```
+Qudle uses several configuration files to manage its behavior:
 
----
+* **`.gitignore`**: Specifies files and directories to ignore in the Git repository.
+* **`jsconfig.json`**: Defines path aliases for the project, allowing for shorter import paths.
+* **`postcss.config.mjs`**: Configures PostCSS to process CSS files and apply Tailwind CSS utility classes.
+* **`next.config.mjs`**: Customizes the behavior of the Next.js development server and build process.
+* **`eslint.config.mjs`**: Configures ESLint to enforce coding standards and best practices.
 
-## 📋 Development Roadmap
 
-### Phase 1: UI Development ✅ (Current)
-- [x] Landing page design
-- [x] Achievement system interface
-- [x] Responsive layout
-- [x] Animation system
-- [x] Component architecture
 
-### Phase 2: Backend Foundation 🔄 (Next)
-- [ ] Database schema design
-- [ ] User authentication system
-- [ ] RESTful API development
-- [ ] Real-time WebSocket setup
-- [ ] Quiz data management
-
-### Phase 3: Core Features 📅 (Upcoming)
-- [ ] Quiz engine implementation
-- [ ] Battle royale system
-- [ ] Leaderboard functionality
-- [ ] Achievement tracking
-- [ ] Progress analytics
-
-### Phase 4: Advanced Features 🎯 (Future)
-- [ ] AI-powered question generation
-- [ ] Machine learning difficulty scaling
-- [ ] Advanced analytics dashboard
-- [ ] Mobile app development
-- [ ] Classroom management tools
-
-### Phase 5: Enhancement & Scaling 🚀 (Long-term)
-- [ ] Performance optimization
-- [ ] Advanced gamification
-- [ ] Social features
-- [ ] Content marketplace
-- [ ] Enterprise features
-
----
-
-## 🎯 Feature Deep Dive
-
-### 🏆 Achievement System
-- **Trophies**: 15+ unique achievements with different rarities
-- **Progress Tracking**: Real-time progress updates
-- **XP System**: Experience points for all activities
-- **Streaks**: Daily login and performance streaks
-
-### ⚔️ Battle Royale Mode
-- **Real-time Competition**: Live quiz battles
-- **Dynamic Difficulty**: AI-adjusted question complexity
-- **Power-ups**: Special abilities and boosts
-- **Elimination System**: Last-person-standing gameplay
-
-### 📊 Analytics Dashboard
-- **Performance Metrics**: Detailed statistics
-- **Learning Insights**: Skill gap analysis
-- **Progress Visualization**: Interactive charts
-- **Comparative Analysis**: Peer benchmarking
-
----
-
-## 🎨 UI Highlights
-
-- **Modern Design**: Clean, gaming-inspired interface
-- **Responsive Layout**: Mobile-first approach
-- **Smooth Animations**: Framer Motion powered
-- **Dark Theme**: Eye-friendly color scheme
-- **Interactive Elements**: Hover and click animations
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
-
-### Areas for Contribution
-- Backend API development
-- Database optimization
-- Testing implementation
-- Documentation improvements
-- Bug fixes and enhancements
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- Next.js team for the amazing framework
-- Tailwind CSS for the utility-first styling
-- Framer Motion for smooth animations
-- The open-source community for inspiration
-
----
-
+<br><br>
 <div align="center">
-  <h3>🚀 Ready to revolutionize education? Join us in building QUDLE!</h3>
-  <p><em>Transform learning into an adventure</em></p>
+<img src="https://avatars.githubusercontent.com/u/123315153?v=4" width="120" />
+<h3>Anish Seth</h3>
+<p>Anish Seth is a Frontend Web Developer and UI/UX Designer working to become a Full Stack Web Developer.</p>
 </div>
+<br>
+<p align="right">
+<img src="https://gitfull.vercel.app/appLogo.png" width="20"/>  <a href="https://gitfull.vercel.app">Made by GitFull</a>
+</p>
+    
